@@ -1,4 +1,5 @@
 using Code.MapModule;
+using Code.TankModule;
 using Code.UiModule;
 using Code.UiModule.Views;
 using UnityEngine;
@@ -15,6 +16,7 @@ namespace Code
             Container.Bind<UiRoot>().FromInstance(_uiRoot).AsSingle().NonLazy();
 
             MapInstaller.Install(Container);
+            TankInstaller.Install(Container);
             
             UiInstaller.Install(Container);
         }

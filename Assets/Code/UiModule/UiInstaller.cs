@@ -18,7 +18,7 @@ namespace Code.UiModule
                 .AsSingle();
 
             Container.Bind<UiCreatorController>().AsSingle();
-            Container.Bind<MainMenuController>().AsSingle().NonLazy();
+            //Container.Bind<MainMenuController>().AsSingle().NonLazy();
         }
     }
 }
